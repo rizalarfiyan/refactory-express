@@ -1,9 +1,10 @@
-import { Router } from 'express';
-var router = Router();
+import { Router } from 'express'
+
+const router = Router()
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/', (req, res) => {
+  res.render('index', { title: 'Express' })
+})
 
-export default router;
+export default router
